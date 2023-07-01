@@ -5,12 +5,14 @@ const managerAccess = new ManagerAccess();
 
 export default class ProductManager{
 
-    constructor(){}
+    constructor(){
+        this.model = productModel;
+    }
 
     addProduct = async (productBody) => {
         try{
             let {title, description, price, thumnail, code, stock, category} = productBody;
-            let result = await productModel.create({
+            let result = await this.model.create({
                 title,
                 description,
                 price,
@@ -30,7 +32,7 @@ export default class ProductManager{
 
     getProducts = async(query, options) => {   
         try{
-            const result = await productModel.paginate(query, options);
+            const result = await this.model.paginate(query, options);
             return result;
         }catch(error){
             console.log('Cannot get products in manager with mongoose: '+error)
@@ -40,7 +42,7 @@ export default class ProductManager{
     getProductById = async(pid) => {
         try{
             await managerAccess.saveLog('GET a product');
-            const result = await productModel.findOne({_id:pid});
+            const result = await this.model.findOne({_id:pid});
             return result;
         }catch(error){
             console.log('Cannot get product by id in manager with mongoose: '+error)
@@ -50,7 +52,7 @@ export default class ProductManager{
     updateProduct = async (idProduct, product) => {
         try{
             await managerAccess.saveLog('UPDATE a product');
-            let result = await productModel.updateOne({_id:idProduct}, {$set:product});
+            let result = await this.model.updateOne({_id:idProduct}, {$set:product});
             return result;
         }catch(error){
             console.log('Cannot update product by id in manager with mongoose: '+error)
@@ -61,7 +63,7 @@ export default class ProductManager{
     deleteProductById = async (aId) => {
         try{
             await managerAccess.saveLog('DELETE a product');
-            let result = await productModel.findByIdAndDelete(aId);
+            let result = await this.model.findByIdAndDelete(aId);
             return result;
         }catch(error){
             console.log('Cannot delete the product in manager with mongoose: '+error);
