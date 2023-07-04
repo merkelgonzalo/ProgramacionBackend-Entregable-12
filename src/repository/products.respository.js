@@ -14,7 +14,6 @@ export class ProductRepository{
 
     async getProducts(query, options){
         const result = await this.dao.get(query, options);
-        console.log(result)
         return result;
     }
 

@@ -1,9 +1,7 @@
-import ProductManager from "../Dao/managers/ProductManager.js";
-import CartManager from "../Dao/managers/CartManager.js";
+import { productService } from "../repository/index.js"
+import { cartService } from "../repository/index.js";
 import ManagerAccess from '../Dao/managers/ManagerAccess.js';
 
-const productManager = new ProductManager();
-const cartManager = new CartManager();
 const managerAccess = new ManagerAccess();
 
 export const getProductsController = async (req, res) => {
@@ -37,7 +35,7 @@ export const getProductsController = async (req, res) => {
             options.sort = { price: sort };
         }
 
-        const result = await productManager.getProducts(query, options);
+        const result = await productService.getProducts(query, options);
         
         res.render('home', { 
             products: result.docs,
@@ -63,7 +61,7 @@ export const getProductsController = async (req, res) => {
 
 export const getCartController = async (req, res) => {
     try {
-        let result = await cartManager.getCartByIdPopulate(req.params.cid);
+        let result = await cartService.getCartByIdPopulate(req.params.cid);
         if (result.length === 0) res.status(400).json({ status: "error", error: "ID NOT FOUND" });
         const products = result.products;
         res.render('cart', {
