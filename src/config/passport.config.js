@@ -13,7 +13,7 @@ const initializePassport = () => {
             const {first_name, last_name, email, age} = req.body;
             try {
                 let user = await userModel.findOne({email:username}); 
-                if(user || email === "adminCoder@coder.com"){ //No error occurred but this user already exist and can not continue
+                if(user || email === config.auth.account){ //No error occurred but this user already exist and can not continue
                     console.log('User already exist');
                     return done(null,false);
                 }else{ //Everything OK
@@ -50,7 +50,6 @@ const initializePassport = () => {
         }else{
             const user = await userModel.findById(id);
         }
-        console.log("user de deserializeUser: "+user);
         done(null, user)
     });
 
@@ -120,28 +119,6 @@ const initializePassport = () => {
             }
         }
     ));
-      
-    // passport.use('current', new LocalStrategy(async (email, password, done)=>{
-    //     try {
-    //         console.log("entró al config");
-    //         let user;
-    //         if(!email){
-    //             return done(null, false);
-    //         }else{
-    //             user = await userModel.findOne({email});
-    //             if(!user){
-    //                 console.log("El usuario no existe")
-    //                 return done(null, false);
-    //             }else{
-    //                 console.log("Todo ok")
-    //                 return done(null, user);
-    //             }
-    //         }
-    //     } catch (error) {
-    //         console.log("Todo RE MAL");
-    //         return done("Error ocurred when try to see current user: " + error);   
-    //     }
-    // }));
 
 }
 

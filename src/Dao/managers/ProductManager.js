@@ -9,8 +9,9 @@ export default class ProductManager{
         this.model = productModel;
     }
 
-    addProduct = async (productBody) => {
+    post = async (productBody) => {
         try{
+            await managerAccess.saveLog('POST a product');
             let {title, description, price, thumnail, code, stock, category} = productBody;
             let result = await this.model.create({
                 title,
@@ -30,8 +31,9 @@ export default class ProductManager{
         }
     }
 
-    getProducts = async(query, options) => {   
+    get = async(query, options) => {   
         try{
+            await managerAccess.saveLog('GET producs');
             const result = await this.model.paginate(query, options);
             return result;
         }catch(error){
@@ -39,7 +41,7 @@ export default class ProductManager{
         }
     }
 
-    getProductById = async(pid) => {
+    getProduct = async(pid) => {
         try{
             await managerAccess.saveLog('GET a product');
             const result = await this.model.findOne({_id:pid});
@@ -49,7 +51,7 @@ export default class ProductManager{
         }
     }
 
-    updateProduct = async (idProduct, product) => {
+    put = async (idProduct, product) => {
         try{
             await managerAccess.saveLog('UPDATE a product');
             let result = await this.model.updateOne({_id:idProduct}, {$set:product});
@@ -60,7 +62,7 @@ export default class ProductManager{
         
     }
 
-    deleteProductById = async (aId) => {
+    delete = async (aId) => {
         try{
             await managerAccess.saveLog('DELETE a product');
             let result = await this.model.findByIdAndDelete(aId);

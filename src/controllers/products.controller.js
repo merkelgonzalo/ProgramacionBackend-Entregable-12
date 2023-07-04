@@ -1,6 +1,4 @@
-import ProductManager from "../Dao/managers/ProductManager.js";
-
-const productManager = new ProductManager();
+import { productService } from "../repository/index.js"
 
 export const getProductsController = async (req, res) => {
     try {
@@ -10,7 +8,7 @@ export const getProductsController = async (req, res) => {
         const page = parseInt(req.query.page) || 1;
         const queryParam = req.query.query || null;
 
-        const query = {};
+        let query = {};
 
         if (queryParam !== null) {
             query["$or"] = [
@@ -33,7 +31,7 @@ export const getProductsController = async (req, res) => {
             options.sort = { price: sort };
         }
 
-        const result = await productManager.getProducts(query, options);
+        const result = await productService.getProducts(query, options);
         const products = result.docs;
         
         res.send({
@@ -48,7 +46,7 @@ export const getProductsController = async (req, res) => {
 
 export const getProductController = async (req, res) => {
     try {
-        const result = await productManager.getProductById(req.params.pid);
+        const result = await productService.getProductById(req.params.pid);
         if(result === null) res.status(400).json({status:"error", error: "ID NOT FOUND"});       
         res.send({
             status: 'success',
@@ -66,7 +64,7 @@ export const createProductController = async (req, res) => {
         if(!productBody.title || !productBody.price || !productBody.code || !productBody.category){
             res.status(400).json({status:"error", error: "Incomplete values"});
         }else{
-            let result = await productManager.addProduct(productBody);
+            let result = await productService.addProduct(productBody);
             res.send({
                 status: 'success',
                 payload: result
@@ -86,7 +84,7 @@ export const updateProductController = async (req, res) => {
         if(!product.title || !product.price || !product.code || !product.category){
             res.status(400).json({status:"error", error: "Incomplete values"});
         }else{
-            let result = await productManager.updateProduct(idProduct, product);
+            let result = await productService.updateProduct(idProduct, product);
             if(result.matchedCount === 0) res.status(400).json({status:"error", error: "ID NOT FOUND"});
             res.send({status: 'success', payload: result})
         }
@@ -98,7 +96,7 @@ export const updateProductController = async (req, res) => {
 
 export const deleteProductController = async (req, res) => {
     try {
-        let result = await productManager.deleteProductById(req.params.pid);
+        let result = await productService.deleteProductById(req.params.pid);
         if(result === null) res.status(400).json({status:"error", error: "ID NOT FOUND"});
         res.send({status: 'success', payload: result})
     } catch (error) {

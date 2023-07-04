@@ -606,3 +606,9 @@ Date: 21/6/2023 - Hour: 21:55:14 - Method: GET a cart
 Date: 21/6/2023 - Hour: 21:58:02 - Method: GET a cart
 Date: 21/6/2023 - Hour: 21:59:11 - Method: GET a cart
 Date: 21/6/2023 - Hour: 22:11:01 - Method: Login
+Date: 4/7/2023 - Hour: 16:54:41 - Method: GET a product
+Date: 4/7/2023 - Hour: 16:58:21 - Method: GET a product
+Date: 4/7/2023 - Hour: 17:01:42 - Method: UPDATE a product
+Date: 4/7/2023 - Hour: 17:01:50 - Method: GET producs
+Date: 4/7/2023 - Hour: 17:02:21 - Method: DELETE a product
+Date: 4/7/2023 - Hour: 17:02:26 - Method: GET producs
