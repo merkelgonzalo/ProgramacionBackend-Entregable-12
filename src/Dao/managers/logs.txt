@@ -632,3 +632,12 @@ Date: 4/7/2023 - Hour: 17:54:08 - Method: Login
 Date: 4/7/2023 - Hour: 17:54:15 - Method: Register
 Date: 4/7/2023 - Hour: 17:54:57 - Method: Login
 Date: 4/7/2023 - Hour: 17:55:13 - Method: GET producs
+Date: 4/7/2023 - Hour: 18:56:58 - Method: GET producs
+Date: 4/7/2023 - Hour: 18:57:00 - Method: Login
+Date: 4/7/2023 - Hour: 18:57:05 - Method: GET producs
+Date: 4/7/2023 - Hour: 20:26:52 - Method: Login
+Date: 4/7/2023 - Hour: 20:30:12 - Method: GET producs
+Date: 4/7/2023 - Hour: 20:30:27 - Method: Login
+Date: 4/7/2023 - Hour: 20:33:12 - Method: Login
+Date: 4/7/2023 - Hour: 20:33:19 - Method: GET producs
+Date: 4/7/2023 - Hour: 20:33:23 - Method: Login

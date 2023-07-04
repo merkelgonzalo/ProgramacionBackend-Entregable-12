@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import passport from 'passport';
+import { GetUserDto } from "../Dao/dto/user.dto.js";
 
 const router = Router();
 
@@ -51,8 +52,10 @@ router.get('/githubcallback', passport.authenticate('github',{failureRedirect:'/
 router.get('/current', (req, res) => {
 
     if(!req.session.user) return res.status(400).send({status:"error", error: 'No user currently'});
+
+    let user = new GetUserDto(req.session.user);
     
-    res.send({status:"success", payload:req.session.user, message:"Current user!!!"})
+    res.send({status:"success", payload:user, message:"Current user!!!"})
 });
 
 export default router;

@@ -1,5 +1,6 @@
 import {Router} from 'express';
 import { getCartController, getProductsController, registerController, loginController } from '../controllers/views.controller.js';
+import { autorization } from '../middlewares/autorization.js';
 
 const router = Router();
 
