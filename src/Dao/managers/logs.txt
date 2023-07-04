@@ -612,3 +612,15 @@ Date: 4/7/2023 - Hour: 17:01:42 - Method: UPDATE a product
 Date: 4/7/2023 - Hour: 17:01:50 - Method: GET producs
 Date: 4/7/2023 - Hour: 17:02:21 - Method: DELETE a product
 Date: 4/7/2023 - Hour: 17:02:26 - Method: GET producs
+Date: 4/7/2023 - Hour: 17:27:43 - Method: GET all carts
+Date: 4/7/2023 - Hour: 17:28:00 - Method: POST a cart
+Date: 4/7/2023 - Hour: 17:28:16 - Method: GET a cart
+Date: 4/7/2023 - Hour: 17:28:57 - Method: GET producs
+Date: 4/7/2023 - Hour: 17:29:46 - Method: POST product in a cart
+Date: 4/7/2023 - Hour: 17:29:52 - Method: GET all carts
+Date: 4/7/2023 - Hour: 17:30:13 - Method: GET a cart
+Date: 4/7/2023 - Hour: 17:30:36 - Method: DELETE a product in a cart
+Date: 4/7/2023 - Hour: 17:30:46 - Method: DELETE a product in a cart
+Date: 4/7/2023 - Hour: 17:30:50 - Method: GET all carts
+Date: 4/7/2023 - Hour: 17:31:23 - Method: DELETE all products in a cart
+Date: 4/7/2023 - Hour: 17:31:27 - Method: GET all carts

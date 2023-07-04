@@ -11,7 +11,7 @@ export default class ProductManager {
         this.productModel = productModel;
     }
 
-    addCart = async () => {
+    post = async () => {
         try {
             await managerAccess.saveLog('POST a cart');
             let result = await this.model.create({});
@@ -39,7 +39,7 @@ export default class ProductManager {
         }
     }
 
-    getCarts = async (req) => {
+    get = async () => {
         try {
             await managerAccess.saveLog('GET all carts');
             let carts = await this.model.find();
@@ -49,7 +49,7 @@ export default class ProductManager {
         }
     }
 
-    getCartById = async (cid) => {
+    getCart = async (cid) => {
         try {
             await managerAccess.saveLog('GET a cart');
             const result = await this.model.find({ _id: cid });
@@ -59,7 +59,7 @@ export default class ProductManager {
         }
     }
 
-    getCartByIdPopulate = async (cid) => {
+    getCartPopulate = async (cid) => {
         try {
             await managerAccess.saveLog('GET a cart');
             const result = await this.model.findById(cid).populate("products.product").lean();
@@ -69,7 +69,7 @@ export default class ProductManager {
         }
     }
 
-    deleteCart = async (cid) => {
+    delete = async (cid) => {
         try {
             await managerAccess.saveLog('DELETE all products in a cart');
             const cart = await this.model.find({ _id: cid });
@@ -86,20 +86,20 @@ export default class ProductManager {
         }
     }
 
-    deleteProductById = async (idCart, idProduct) => {
+    deleteProduct = async (cid, pid) => {
         try {
             await managerAccess.saveLog('DELETE a product in a cart');
 
-            const cart = await this.model.find({ _id: idCart });
-            const product = await this.productModel.find({ _id: idProduct });
+            const cart = await this.model.find({ _id: cid });
+            const product = await this.productModel.find({ _id: pid });
             let result;
 
             if (cart.length === 0 || product.length === 0) {
                 result = 0;
             } else {
-                const products = cart[0].products.filter(element => element.product._id != idProduct);
+                const products = cart[0].products.filter(element => element.product._id != pid);
                 cart[0].products = products;
-                result = await this.model.updateOne({ _id: idCart }, { $set: cart[0] });
+                result = await this.model.updateOne({ _id: cid }, { $set: cart[0] });
             }
             return result;
         } catch (error) {
@@ -107,7 +107,7 @@ export default class ProductManager {
         }
     }
 
-    updateCart = async (cid, products) => {
+    put = async (cid, products) => {
         try {
             await managerAccess.saveLog('UPDATE all products in a cart');
             const cart = await this.model.findById(cid);
@@ -125,7 +125,7 @@ export default class ProductManager {
         }
     }
 
-    updateProduct = async (cid, pid, quantity) => {
+    putProduct = async (cid, pid, quantity) => {
         try {
             await managerAccess.saveLog('UPDATE product s quantity in a cart');
             const cart = await this.model.find({ _id: cid });

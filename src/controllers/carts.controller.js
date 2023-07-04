@@ -1,13 +1,12 @@
-import CartManager from "../Dao/managers/CartManager.js";
+import { cartService } from "../repository/index.js"
 import mongoose from 'mongoose';
 
-const cartManager = new CartManager();
 const ObjectId = mongoose.Types.ObjectId;
 
 export const getCartsController = async (req, res) => {
     try {
         let limit = req.query.limit;
-        let result = await cartManager.getCarts(req);
+        let result = await cartService.getCarts(req);
         if (limit != undefined) {
             result = result.slice(0, limit);
         }
@@ -20,7 +19,7 @@ export const getCartsController = async (req, res) => {
 
 export const getCartController = async (req, res) => {
     try {
-        let result = await cartManager.getCartById(req.params.cid);
+        let result = await cartService.getCartById(req.params.cid);
         if (result.length === 0) res.status(400).json({ status: "error", error: "ID NOT FOUND" });
         res.send({ result: "success", payload: result });
     } catch (error) {
@@ -31,7 +30,7 @@ export const getCartController = async (req, res) => {
 
 export const createCartController = async (req, res) => {
     try {
-        let result = await cartManager.addCart();
+        let result = await cartService.addCart();
         res.send({ result: "success", payload: result });
     } catch (error) {
         console.log('Cannot get carts with mongoose: ' + error)
@@ -44,7 +43,7 @@ export const addProductController = async (req, res) => {
         const idCart = req.params.cid;
         const idProduct = req.params.pid;
         const quantityBody = req.body.quantity
-        const result = await cartManager.addProduct(idCart, idProduct, quantityBody);
+        const result = await cartService.addProduct(idCart, idProduct, quantityBody);
         if (result === 0) return res.status(400).json({ status: "error", error: "ID NOT FOUND" });
         res.send({ result: "success", payload: result });
     } catch (error) {
@@ -57,7 +56,7 @@ export const deleteProductController = async (req, res) => {
     try {
         const idCart = req.params.cid;
         const idProduct = req.params.pid;
-        const result = await cartManager.deleteProductById(idCart, idProduct);
+        const result = await cartService.deleteProductById(idCart, idProduct);
         if (result === 0) return res.status(400).json({ status: "error", error: "ID NOT FOUND" });
         res.send({ result: "success", payload: result });
     } catch (error) {
@@ -69,7 +68,7 @@ export const deleteProductController = async (req, res) => {
 export const deleteProductsController = async (req, res) => {
     try {
         const idCart = req.params.cid;
-        const result = await cartManager.deleteCart(idCart);
+        const result = await cartService.deleteCart(idCart);
         if (result === 0) return res.status(400).json({ status: "error", error: "ID NOT FOUND" });
         res.send({ result: "success", payload: result });
     } catch (error) {
@@ -85,7 +84,7 @@ export const updateProductsController = async (req, res) => {
             return res.status(400).json({ status: "error", error: "ID NOT FOUND" });;
         }
         const products = req.body.products;
-        const result = await cartManager.updateCart(cid, products);
+        const result = await cartService.updateCart(cid, products);
         if (result === 0) return res.status(400).json({ status: "error", error: "ID NOT FOUND" });
         res.send({ result: "success", payload: result });
     } catch (error) {
@@ -102,7 +101,7 @@ export const updateProductController = async (req, res) => {
             return res.status(400).json({ status: "error", error: "ID NOT FOUND" });;
         }
         const quantity = req.body.quantity;
-        const result = await cartManager.updateProduct(cid, pid, quantity);
+        const result = await cartService.updateProduct(cid, pid, quantity);
         if (result === 0) return res.status(400).json({ status: "error", error: "ID NOT FOUND" });
         res.send({ result: "success", payload: result });
     } catch (error) {
