@@ -23,6 +23,8 @@ export default class ProductManager {
 
     addProduct = async (idCart, idProduct, quantityBody) => {
         try {
+            console.log("cart " + idCart);
+            console.log("product " + idProduct);
             await managerAccess.saveLog('POST product in a cart');
             let result;
             const cart = await this.model.find({ _id: idCart });
@@ -30,8 +32,12 @@ export default class ProductManager {
             if (cart.length === 0 || product.length === 0) {
                 result = 0;
             } else {
-                cart[0].products.push({ product: idProduct, quantity: quantityBody });
-                result = await this.model.updateOne({ _id: idCart }, { $set: cart[0] });
+                if(product[0].stock < 1){
+                    result = 1; 
+                }else{
+                    cart[0].products.push({ product: idProduct, quantity: quantityBody });
+                    result = await this.model.updateOne({ _id: idCart }, { $set: cart[0] });
+                }
             }
             return result;
         } catch (error) {

@@ -1,6 +1,7 @@
 <h3>Welcome
     {{#if user}}
         : {{user.first_name}} {{user.name}} / {{user.email}} / {{user.role}}
+        <div id="cartId">{{user.cart}}</div>
         <a href="/api/sessions/logout"><button>Logout</button></a>
     {{/if}}
 </h3>
@@ -36,7 +37,9 @@
                     <td>{{this.stock}}</td>
                     <td>{{this.category}}</td>
                     <td>{{this.status}}</td>
-                    <td><button>Add to Cart</button></td>
+                    <td>
+                        <button data-product-id="{{this._id}}">Add to Cart</button>
+                    </td>
                 </tr>
             {{/each}}
         </tbody>
@@ -65,3 +68,4 @@
     {{/if}}
 
 </div>
+<script src="/js/home.js"></script>

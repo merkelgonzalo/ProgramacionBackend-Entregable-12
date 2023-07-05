@@ -42,9 +42,10 @@ export const addProductController = async (req, res) => {
     try {
         const idCart = req.params.cid;
         const idProduct = req.params.pid;
-        const quantityBody = req.body.quantity
+        const quantityBody = req.body.quantity || 1;
         const result = await cartService.addProduct(idCart, idProduct, quantityBody);
         if (result === 0) return res.status(400).json({ status: "error", error: "ID NOT FOUND" });
+        if (result === 1) return res.status(400).json({ status: "error", error: "OUT OF STOCK" });
         res.send({ result: "success", payload: result });
     } catch (error) {
         console.log('Cannot add product with mongoose: ' + error)

@@ -641,3 +641,110 @@ Date: 4/7/2023 - Hour: 20:30:27 - Method: Login
 Date: 4/7/2023 - Hour: 20:33:12 - Method: Login
 Date: 4/7/2023 - Hour: 20:33:19 - Method: GET producs
 Date: 4/7/2023 - Hour: 20:33:23 - Method: Login
+Date: 5/7/2023 - Hour: 16:13:07 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:13:17 - Method: Login
+Date: 5/7/2023 - Hour: 16:13:22 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:13:27 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:14:39 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:16:28 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:19:26 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:22:20 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:23:03 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:23:18 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:23:20 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:24:00 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:24:24 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:24:42 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:24:52 - Method: Login
+Date: 5/7/2023 - Hour: 16:24:57 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:26:13 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:26:30 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:26:40 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:27:08 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:27:31 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:28:08 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:28:55 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:31:09 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:31:23 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:31:56 - Method: Login
+Date: 5/7/2023 - Hour: 16:32:01 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:33:47 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:34:27 - Method: GET producs
+Date: 5/7/2023 - Hour: 16:35:08 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:04:19 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:04:27 - Method: Login
+Date: 5/7/2023 - Hour: 17:04:32 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:04:57 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:05:10 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:11:23 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:11:28 - Method: Login
+Date: 5/7/2023 - Hour: 17:17:40 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:19:02 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:19:08 - Method: Login
+Date: 5/7/2023 - Hour: 17:19:17 - Method: POST a cart
+Date: 5/7/2023 - Hour: 17:19:18 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:22:06 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:24:54 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:26:37 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:27:32 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:27:35 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 17:49:27 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:49:33 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 17:52:08 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:57:17 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:57:46 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:57:59 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 17:58:34 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:58:50 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:59:00 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:59:18 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:59:20 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:59:34 - Method: GET producs
+Date: 5/7/2023 - Hour: 17:59:37 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 18:06:37 - Method: GET a cart
+Date: 5/7/2023 - Hour: 18:06:59 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 18:09:33 - Method: Login
+Date: 5/7/2023 - Hour: 18:09:37 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:10:34 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:10:50 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:13:04 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:13:43 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:13:50 - Method: Login
+Date: 5/7/2023 - Hour: 18:13:52 - Method: POST a cart
+Date: 5/7/2023 - Hour: 18:13:54 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:13:57 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 18:14:16 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:14:19 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 18:15:10 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:15:19 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 18:15:48 - Method: Login
+Date: 5/7/2023 - Hour: 18:15:59 - Method: POST a cart
+Date: 5/7/2023 - Hour: 18:16:01 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:16:06 - Method: Login
+Date: 5/7/2023 - Hour: 18:16:09 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:20:52 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:20:56 - Method: Login
+Date: 5/7/2023 - Hour: 18:20:59 - Method: POST a cart
+Date: 5/7/2023 - Hour: 18:21:00 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:23:09 - Method: POST a product
+Date: 5/7/2023 - Hour: 18:23:12 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:23:16 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 18:26:24 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:28:11 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:28:14 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 18:31:17 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:31:20 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 18:32:05 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:32:10 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 18:35:07 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:35:09 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 18:35:55 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:36:12 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:36:17 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 18:37:42 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:37:45 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 18:40:07 - Method: Login
+Date: 5/7/2023 - Hour: 18:40:09 - Method: POST a cart
+Date: 5/7/2023 - Hour: 18:40:11 - Method: GET producs
+Date: 5/7/2023 - Hour: 18:40:16 - Method: POST product in a cart
+Date: 5/7/2023 - Hour: 18:42:24 - Method: POST product in a cart

@@ -4,6 +4,7 @@ import { userModel } from '../Dao/models/users.model.js';
 import { createHash, validatePassword } from '../utils.js';
 import GitHubStrategy from 'passport-github2';
 import { config } from './config.js';
+import { cartService } from '../repository/index.js';
 
 const LocalStrategy = local.Strategy;
 
@@ -68,6 +69,7 @@ const initializePassport = () => {
                 return done(null, user);
             }else{
                 user = await userModel.findOne({email});
+                user.cart = await cartService.addCart();
                 if(!user){
                     console.log("El usuario no existe")
                     return done(null, false);
