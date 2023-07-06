@@ -748,3 +748,11 @@ Date: 5/7/2023 - Hour: 18:40:09 - Method: POST a cart
 Date: 5/7/2023 - Hour: 18:40:11 - Method: GET producs
 Date: 5/7/2023 - Hour: 18:40:16 - Method: POST product in a cart
 Date: 5/7/2023 - Hour: 18:42:24 - Method: POST product in a cart
+Date: 6/7/2023 - Hour: 11:10:38 - Method: GET producs
+Date: 6/7/2023 - Hour: 11:10:45 - Method: Login
+Date: 6/7/2023 - Hour: 11:11:06 - Method: GET producs
+Date: 6/7/2023 - Hour: 11:14:13 - Method: GET producs
+Date: 6/7/2023 - Hour: 11:14:17 - Method: Login
+Date: 6/7/2023 - Hour: 11:14:23 - Method: POST a cart
+Date: 6/7/2023 - Hour: 11:14:24 - Method: GET producs
+Date: 6/7/2023 - Hour: 11:14:29 - Method: POST product in a cart
