@@ -1,8 +1,9 @@
-
 export class CartRepository{
     
-    constructor(dao){
+    constructor(dao, ticketService, userService){
         this.dao = dao;
+        this.ticketService = ticketService;
+        this.userService = userService;
     }
 
     async addCart(){
@@ -47,6 +48,13 @@ export class CartRepository{
 
     async deleteProductById(cid, pid){
         const result = await this.dao.deleteProduct(cid, pid);
+        return result;
+    }
+
+    async buyCart(cid){
+        const amount = await this.dao.buy(cid);
+        const purchaser = await this.userService.getMailByCart(cid);
+        const result = await this.ticketService.addTicket(amount, purchaser);
         return result;
     }
 

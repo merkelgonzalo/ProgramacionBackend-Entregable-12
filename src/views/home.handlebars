@@ -1,7 +1,10 @@
 <h3>Welcome
     {{#if user}}
         : {{user.first_name}} {{user.name}} / {{user.email}} / {{user.role}}
-        <div id="cartId">{{user.cart}}</div>
+        <div id="cartId">{{user.cart._id}}</div>
+        <button id="buyButton">B U Y</button>
+        <br>
+        <br>
         <a href="/api/sessions/logout"><button>Logout</button></a>
     {{/if}}
 </h3>

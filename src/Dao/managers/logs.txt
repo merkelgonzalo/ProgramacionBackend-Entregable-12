@@ -748,3 +748,139 @@ Date: 5/7/2023 - Hour: 18:40:09 - Method: POST a cart
 Date: 5/7/2023 - Hour: 18:40:11 - Method: GET producs
 Date: 5/7/2023 - Hour: 18:40:16 - Method: POST product in a cart
 Date: 5/7/2023 - Hour: 18:42:24 - Method: POST product in a cart
+Date: 6/7/2023 - Hour: 11:10:38 - Method: GET producs
+Date: 6/7/2023 - Hour: 11:10:45 - Method: Login
+Date: 6/7/2023 - Hour: 11:11:06 - Method: GET producs
+Date: 6/7/2023 - Hour: 11:14:13 - Method: GET producs
+Date: 6/7/2023 - Hour: 11:14:17 - Method: Login
+Date: 6/7/2023 - Hour: 11:14:23 - Method: POST a cart
+Date: 6/7/2023 - Hour: 11:14:24 - Method: GET producs
+Date: 6/7/2023 - Hour: 11:14:29 - Method: POST product in a cart
+Date: 7/7/2023 - Hour: 21:13:44 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:14:59 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:15:02 - Method: Login
+Date: 7/7/2023 - Hour: 21:15:05 - Method: POST a cart
+Date: 7/7/2023 - Hour: 21:15:07 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:23:04 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:27:11 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:27:37 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:28:42 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:29:07 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:29:19 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:30:38 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:30:53 - Method: POST product in a cart
+Date: 7/7/2023 - Hour: 21:36:47 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:38:35 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:39:03 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:39:06 - Method: POST product in a cart
+Date: 7/7/2023 - Hour: 21:39:22 - Method: POST product in a cart
+Date: 7/7/2023 - Hour: 21:40:35 - Method: GET all carts
+Date: 7/7/2023 - Hour: 21:48:24 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:48:49 - Method: GET all carts
+Date: 7/7/2023 - Hour: 21:53:17 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:53:21 - Method: GET all carts
+Date: 7/7/2023 - Hour: 21:53:52 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:54:05 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:56:27 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:56:30 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 21:57:07 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:57:10 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 21:58:17 - Method: GET producs
+Date: 7/7/2023 - Hour: 21:58:20 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:02:49 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:02:58 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:04:18 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:04:20 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:06:00 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:06:04 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:06:47 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:06:49 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:07:34 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:07:59 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:08:03 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:09:06 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:09:09 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:10:00 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:10:05 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:11:35 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:11:39 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:13:52 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:13:54 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:14:53 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:14:56 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:17:23 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:17:25 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:18:20 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:18:22 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:19:20 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:19:24 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:20:34 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:20:41 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:22:58 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:23:02 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:26:56 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:26:59 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:26:59 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 22:26:59 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 22:30:43 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:30:48 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:30:48 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 22:30:48 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 22:32:17 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:32:22 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:32:22 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 22:32:22 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 22:34:36 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:34:39 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:34:40 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 22:34:40 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 22:39:55 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:39:59 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:40:00 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 22:40:00 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 22:42:13 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:42:35 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:42:35 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 22:42:35 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 22:47:45 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:47:54 - Method: Login
+Date: 7/7/2023 - Hour: 22:47:59 - Method: POST a cart
+Date: 7/7/2023 - Hour: 22:48:00 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:49:08 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:51:27 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:51:32 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:51:46 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:51:50 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 22:56:15 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:58:08 - Method: GET producs
+Date: 7/7/2023 - Hour: 22:59:16 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 23:00:44 - Method: Login
+Date: 7/7/2023 - Hour: 23:00:47 - Method: POST a cart
+Date: 7/7/2023 - Hour: 23:00:49 - Method: GET producs
+Date: 7/7/2023 - Hour: 23:01:51 - Method: GET producs
+Date: 7/7/2023 - Hour: 23:02:26 - Method: GET producs
+Date: 7/7/2023 - Hour: 23:02:34 - Method: POST product in a cart
+Date: 7/7/2023 - Hour: 23:02:36 - Method: POST product in a cart
+Date: 7/7/2023 - Hour: 23:02:42 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 23:02:42 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 23:02:42 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 23:08:17 - Method: GET producs
+Date: 7/7/2023 - Hour: 23:08:21 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 23:08:21 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 23:08:21 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 23:09:56 - Method: GET producs
+Date: 7/7/2023 - Hour: 23:10:12 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 23:10:12 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 23:10:12 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 23:13:30 - Method: GET producs
+Date: 7/7/2023 - Hour: 23:13:33 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 23:13:33 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 23:13:33 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 23:15:39 - Method: GET producs
+Date: 7/7/2023 - Hour: 23:15:42 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 23:15:42 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 23:15:42 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 23:30:33 - Method: GET producs
+Date: 7/7/2023 - Hour: 23:30:36 - Method: BUY a cart
+Date: 7/7/2023 - Hour: 23:30:37 - Method: UPDATE a product
+Date: 7/7/2023 - Hour: 23:30:37 - Method: UPDATE a product

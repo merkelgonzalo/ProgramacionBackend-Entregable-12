@@ -9,7 +9,7 @@ export default class UserManager{
         this.model = userModel;
     }
 
-    async getUsers(){
+    async get(){
         try {
             const result = await this.model.find();;
             return result;
@@ -17,12 +17,21 @@ export default class UserManager{
             console.log('Cannot get users in manager with mongoose: '+error)
         }
     }
-    async createUser(user){
+    async post(user){
         try {
             const result = await this.model.create(user);
             return result;
         } catch (error) {
             console.log('Cannot post the user in manager with mongoose: '+error)     
+        }
+    }
+    async getByCart(cid){
+        try {
+            const result = await this.model.findOne({cart: cid})
+            console.log(result);
+            return result;
+        } catch (error) {
+            console.log('Cannot get user by cart ID in manager with mongoose: '+error)
         }
     }
 }

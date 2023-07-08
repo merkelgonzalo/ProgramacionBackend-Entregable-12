@@ -70,6 +70,7 @@ const initializePassport = () => {
             }else{
                 user = await userModel.findOne({email});
                 user.cart = await cartService.addCart();
+                console.log(user.cart)
                 if(!user){
                     console.log("El usuario no existe")
                     return done(null, false);
@@ -95,6 +96,7 @@ const initializePassport = () => {
             try {    
                 console.log(profile);
                 let user = await userModel.findOne({email: profile._json.email});
+                user.cart = await cartService.addCart();
                 
                 if(!user){
                     let email;
@@ -109,7 +111,8 @@ const initializePassport = () => {
                             email: email,
                             age: 18,
                             password: '',
-                            role: 'user'
+                            role: 'user',
+                            cart: user.cart
                     }
                     const result = await userModel.create(newUser);
                     done(null, result);

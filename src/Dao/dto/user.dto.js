@@ -9,5 +9,6 @@ export class GetUserDto{
         });
         this.age = userDB.age;
         this.role = userDB.role;
+        this.cart = userDB.cart;
     }
 }

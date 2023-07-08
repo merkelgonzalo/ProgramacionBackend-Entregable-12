@@ -1,10 +1,12 @@
 import { cartModel } from '../models/carts.model.js';
 import { productModel } from '../models/products.model.js';
+import ProductManager from './ProductManager.js';
 import ManagerAccess from '../managers/ManagerAccess.js';
 
 const managerAccess = new ManagerAccess();
+const productManager = new ProductManager();
 
-export default class ProductManager {
+export default class CartManager {
 
     constructor() {
         this.model = cartModel;
@@ -23,8 +25,6 @@ export default class ProductManager {
 
     addProduct = async (idCart, idProduct, quantityBody) => {
         try {
-            console.log("cart " + idCart);
-            console.log("product " + idProduct);
             await managerAccess.saveLog('POST product in a cart');
             let result;
             const cart = await this.model.find({ _id: idCart });
@@ -150,6 +150,39 @@ export default class ProductManager {
             return result;
         } catch (error) {
             console.log('Cannot update the product s quantity in manager with mongoose: ' + error);
+        }
+    }
+
+    buy = async (cid) => {
+        try {
+            await managerAccess.saveLog('BUY a cart');
+            let result = [];
+            let amount = 0;
+            const cart = await this.model.find({ _id: cid });
+            console.log("Cart en CartManager: " + cart[0]); //ok
+            if (cart.length !== 0) {
+                cart[0].products.forEach(productCart => {
+                    //console.log("Product del Cart en CartManager: " + productCart); //ok
+                    let product = productCart; //quizas deberia buscarse en la bdd de products
+                    //console.log("Product en CartManager: " + product); //ok
+                    const quantity = productCart.quantity;
+                    const stock = product.product.stock;
+                    if(quantity <= stock){
+                        //Si hay stock, restarlo del stock del producto y seguir
+                        const newProduct = product.product;
+                        newProduct.stock = newProduct.stock - quantity;
+                        productManager.put(newProduct._id, newProduct);
+                        let priceProduct = newProduct.price * quantity;
+                        amount = amount + priceProduct;
+                    }else{
+                        //Si NO hay stock, no agregar el producto al proceso de compra
+                    }
+                });
+            }
+            result[0] = amount;
+            return result;
+        } catch (error) {
+            console.log('Cannot buy cart in manager with mongoose: ' + error)
         }
     }
 

@@ -23,7 +23,7 @@ export const getCartController = async (req, res) => {
         if (result.length === 0) res.status(400).json({ status: "error", error: "ID NOT FOUND" });
         res.send({ result: "success", payload: result });
     } catch (error) {
-        console.log('Cannot get carts with mongoose: ' + error)
+        console.log('Cannot get the cart with mongoose: ' + error)
         res.status(400).json({ message: error });
     }
 }
@@ -33,13 +33,18 @@ export const createCartController = async (req, res) => {
         let result = await cartService.addCart();
         res.send({ result: "success", payload: result });
     } catch (error) {
-        console.log('Cannot get carts with mongoose: ' + error)
+        console.log('Cannot create cart with mongoose: ' + error)
         res.status(500).json({ status: "error", message: error.message });
     }
 }
 
 export const addProductController = async (req, res) => {
     try {
+        console.log("cart " + req.params.cid);
+        console.log("product " + req.params.pid);
+        if (!ObjectId.isValid(req.params.cid) || !ObjectId.isValid(req.params.pid)) {
+            return res.status(400).json({ status: "error", error: "ID NOT FOUND" });;
+        }
         const idCart = req.params.cid;
         const idProduct = req.params.pid;
         const quantityBody = req.body.quantity || 1;
@@ -108,5 +113,17 @@ export const updateProductController = async (req, res) => {
     } catch (error) {
         console.log('Cannot add product with mongoose: ' + error)
         res.status(400).json({ status: "error", message: error.message });
+    }
+}
+
+export const buyCartController = async (req, res) => {
+    try {
+        let result = await cartService.buyCart(req.params.cid);
+        if (result === []) return res.status(400).json({ status: "error", error: "ID NOT FOUND" });
+        if (result === []) return res.status(400).json({ status: "error", error: "OUT OF STOCK" });
+        res.send({ result: "success", payload: result });
+    } catch (error) {
+        console.log('Cannot buy cart with mongoose: ' + error)
+        res.status(500).json({ status: "error", message: error.message });
     }
 }

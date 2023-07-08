@@ -16,5 +16,13 @@ export class UserRepository{
         const userCreated = await this.dao.post(userDto);
         return userCreated;
     }
+
+    async getMailByCart(cid){
+        const user = await this.dao.getByCart(cid);
+        console.log("User en UserRepo: " + user);
+        const email = user.email;
+        console.log("Email en UserRepo: " + email);
+        return email;
+    }
     
 }

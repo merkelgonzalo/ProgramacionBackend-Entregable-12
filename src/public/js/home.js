@@ -119,4 +119,32 @@ addToCartButtons.forEach(button => {
   });
 });
 
+const buyButton = document.getElementById("buyButton");
+
+buyButton.addEventListener('click', e =>{
+    e.preventDefault();
+
+    try {
+      // Enviar una solicitud POST al servidor para finalizar la compra
+      const response = fetch(`/api/carts/${cartId}/purchase`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+
+      // Manejar la respuesta del servidor
+      const data = response;
+      if (response.ok) {
+        // La compra finalizo correctamente
+        console.log('Purchase finished');
+      } else {
+        // Ocurrió un error al finalizar la compra
+        console.log('Error buying cart:', data.error);
+      }
+    } catch (error) {
+      console.log('Error:', error);
+    }
+});
+
 
