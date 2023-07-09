@@ -159,7 +159,6 @@ export default class CartManager {
             let result = [];
             let amount = 0;
             const cart = await this.model.find({ _id: cid });
-            console.log("Cart en CartManager: " + cart[0]); //ok
             if (cart.length !== 0) {
                 cart[0].products.forEach(productCart => {
                     //console.log("Product del Cart en CartManager: " + productCart); //ok

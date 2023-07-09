@@ -915,3 +915,22 @@ Date: 9/7/2023 - Hour: 16:04:47 - Method: GET producs
 Date: 9/7/2023 - Hour: 16:08:31 - Method: GET producs
 Date: 9/7/2023 - Hour: 16:08:41 - Method: Login
 Date: 9/7/2023 - Hour: 16:08:46 - Method: GET producs
+Date: 9/7/2023 - Hour: 16:20:02 - Method: GET producs
+Date: 9/7/2023 - Hour: 16:20:05 - Method: BUY a cart
+Date: 9/7/2023 - Hour: 16:20:06 - Method: POST a ticket
+Date: 9/7/2023 - Hour: 16:29:43 - Method: GET producs
+Date: 9/7/2023 - Hour: 16:35:51 - Method: GET producs
+Date: 9/7/2023 - Hour: 16:37:17 - Method: GET producs
+Date: 9/7/2023 - Hour: 16:37:34 - Method: POST product in a cart
+Date: 9/7/2023 - Hour: 16:37:39 - Method: GET producs
+Date: 9/7/2023 - Hour: 16:37:42 - Method: BUY a cart
+Date: 9/7/2023 - Hour: 16:37:42 - Method: UPDATE a product
+Date: 9/7/2023 - Hour: 16:37:43 - Method: POST a ticket
+Date: 9/7/2023 - Hour: 16:48:19 - Method: GET producs
+Date: 9/7/2023 - Hour: 16:48:46 - Method: BUY a cart
+Date: 9/7/2023 - Hour: 16:48:47 - Method: UPDATE a product
+Date: 9/7/2023 - Hour: 16:48:47 - Method: POST a ticket
+Date: 9/7/2023 - Hour: 16:57:40 - Method: GET producs
+Date: 9/7/2023 - Hour: 16:57:55 - Method: BUY a cart
+Date: 9/7/2023 - Hour: 16:57:55 - Method: UPDATE a product
+Date: 9/7/2023 - Hour: 16:57:55 - Method: POST a ticket

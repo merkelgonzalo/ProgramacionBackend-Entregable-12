@@ -14,10 +14,7 @@ const ticketSchema = new mongoose.Schema({
         default: Date.now
     },
     amount: Number,
-    purchaser: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref:"users"
-    }
+    purchaser: String
 });
 
 export const ticketModel = mongoose.model(ticketCollection, ticketSchema);

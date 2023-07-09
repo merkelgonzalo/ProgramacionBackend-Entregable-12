@@ -52,7 +52,8 @@ export class CartRepository{
     }
 
     async buyCart(cid){
-        const amount = await this.dao.buy(cid);
+        let amount = await this.dao.buy(cid);
+        amount = amount[0];
         const purchaser = await this.userService.getMailByCart(cid);
         const result = await this.ticketService.addTicket(amount, purchaser);
         return result;

@@ -11,6 +11,7 @@ export const getProductsController = async (req, res) => {
         const sort = parseInt(req.query.sort) || 0;
         const page = parseInt(req.query.page) || 1;
         const queryParam = req.query.query || null;
+        let disable = false;
 
         const query = {};
 
@@ -36,6 +37,10 @@ export const getProductsController = async (req, res) => {
         }
 
         const result = await productService.getProducts(query, options);
+
+        // console.log(req.session.user.cart.products)
+
+        // if(req.session.user.cart.products == 0){ disable = true}
         
         res.render('home', { 
             products: result.docs,
@@ -51,7 +56,8 @@ export const getProductsController = async (req, res) => {
             limit,
             sort,
             queryParam,
-            user: req.session.user
+            user: req.session.user,
+            disable
         });
     } catch (error) {
         console.log('Cannot get products view with mongoose: '+error);

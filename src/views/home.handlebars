@@ -2,7 +2,7 @@
     {{#if user}}
         : {{user.first_name}} {{user.name}} / {{user.email}} / {{user.role}}
         <div id="cartId">{{user.cart}}</div>
-        <button id="buyButton">B U Y</button>
+        <button id="buyButton" {{#if disable}} disabled {{/if}}>B U Y</button>
         <br>
         <br>
         <a href="/api/sessions/logout"><button>Logout</button></a>
