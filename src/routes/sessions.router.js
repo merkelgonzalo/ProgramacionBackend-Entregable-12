@@ -6,6 +6,8 @@ import { createCartController } from '../controllers/carts.controller.js';
 const router = Router();
 
 router.post('/register', passport.authenticate('register', {failureREdirect:'/failregister'}), async (req, res) =>{
+    
+    
     res.send({status:"success", message:"User registered"});
 });
 
@@ -17,6 +19,7 @@ router.get('/failregister', async (req, res) => {
 router.post('/login', passport.authenticate('login',{failureRedirect:'/faillogin'}), async (req,res)=>{
     if(!req.user) return res.status(400).send({status:"error", error: 'Invalid credentials'});
 
+    console.log("Cart en session router: " + req.user.cart)
     req.session.user = {
         name: req.user.first_name,
         email: req.user.email,

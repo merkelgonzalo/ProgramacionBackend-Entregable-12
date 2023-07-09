@@ -24,7 +24,8 @@ const initializePassport = () => {
                         email,
                         age,
                         password: createHash(password),
-                        role: "user"
+                        role: "user",
+                        cart: await cartService.addCart()
                     };
                     let result = await userModel.create(newUser);
                     return done(null, result);
@@ -69,8 +70,6 @@ const initializePassport = () => {
                 return done(null, user);
             }else{
                 user = await userModel.findOne({email});
-                user.cart = await cartService.addCart();
-                console.log(user.cart)
                 if(!user){
                     console.log("El usuario no existe")
                     return done(null, false);

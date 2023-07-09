@@ -28,7 +28,6 @@ export default class UserManager{
     async getByCart(cid){
         try {
             const result = await this.model.findOne({cart: cid})
-            console.log(result);
             return result;
         } catch (error) {
             console.log('Cannot get user by cart ID in manager with mongoose: '+error)
