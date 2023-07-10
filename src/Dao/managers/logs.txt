@@ -934,3 +934,177 @@ Date: 9/7/2023 - Hour: 16:57:40 - Method: GET producs
 Date: 9/7/2023 - Hour: 16:57:55 - Method: BUY a cart
 Date: 9/7/2023 - Hour: 16:57:55 - Method: UPDATE a product
 Date: 9/7/2023 - Hour: 16:57:55 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 16:05:19 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:05:29 - Method: Login
+Date: 10/7/2023 - Hour: 16:05:39 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:06:00 - Method: POST product in a cart
+Date: 10/7/2023 - Hour: 16:06:43 - Method: POST product in a cart
+Date: 10/7/2023 - Hour: 16:07:05 - Method: POST product in a cart
+Date: 10/7/2023 - Hour: 16:07:53 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 16:07:54 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:07:54 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:07:54 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:07:54 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:07:54 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 16:09:23 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:09:56 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:10:00 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 16:10:00 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:10:00 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:10:00 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:10:00 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:10:01 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 16:14:40 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 16:14:40 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:14:40 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:14:40 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:14:40 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:14:40 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 16:21:06 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:21:22 - Method: Login
+Date: 10/7/2023 - Hour: 16:23:04 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:23:08 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 16:23:09 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:23:09 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:23:09 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:23:09 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:23:09 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 16:23:09 - Method: PUT a ticket
+Date: 10/7/2023 - Hour: 16:23:18 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 16:23:18 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:23:18 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:23:18 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:23:18 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:23:18 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 16:23:18 - Method: PUT a ticket
+Date: 10/7/2023 - Hour: 16:24:29 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:24:32 - Method: Login
+Date: 10/7/2023 - Hour: 16:24:42 - Method: Register
+Date: 10/7/2023 - Hour: 16:24:54 - Method: POST a cart
+Date: 10/7/2023 - Hour: 16:24:55 - Method: Login
+Date: 10/7/2023 - Hour: 16:25:02 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:25:07 - Method: POST product in a cart
+Date: 10/7/2023 - Hour: 16:25:09 - Method: POST product in a cart
+Date: 10/7/2023 - Hour: 16:25:12 - Method: POST product in a cart
+Date: 10/7/2023 - Hour: 16:25:15 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 16:25:16 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:25:16 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:25:16 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:25:16 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:25:16 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:25:16 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:25:16 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 16:25:16 - Method: PUT a ticket
+Date: 10/7/2023 - Hour: 16:30:51 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 16:30:52 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:30:52 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:30:52 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:30:52 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:30:52 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:30:52 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:30:52 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 16:31:20 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:32:22 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:32:28 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 16:32:28 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:32:28 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:32:28 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:32:28 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:32:28 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:32:28 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:33:40 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:33:45 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 16:33:46 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:33:46 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:33:46 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:33:46 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:33:46 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:33:46 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:37:37 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:37:44 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 16:37:44 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:37:44 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:37:44 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:37:44 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:37:44 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:37:44 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:38:44 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:38:51 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 16:38:51 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:39:41 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:39:45 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 16:39:46 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:39:46 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:39:46 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:39:46 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:39:46 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:39:46 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:43:43 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:43:52 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 16:43:53 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:43:53 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:43:53 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:43:53 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:43:53 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:43:53 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:48:49 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:49:05 - Method: GET a cart
+Date: 10/7/2023 - Hour: 16:58:17 - Method: GET producs
+Date: 10/7/2023 - Hour: 16:58:20 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 16:58:20 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:58:20 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 16:58:20 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 16:58:20 - Method: DELETE a product in a cart
+Date: 10/7/2023 - Hour: 17:02:22 - Method: GET producs
+Date: 10/7/2023 - Hour: 17:02:26 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 17:02:27 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 17:02:27 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 17:02:58 - Method: GET producs
+Date: 10/7/2023 - Hour: 17:03:00 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 17:03:01 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 17:03:01 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 17:04:17 - Method: GET producs
+Date: 10/7/2023 - Hour: 17:07:44 - Method: GET producs
+Date: 10/7/2023 - Hour: 17:07:47 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 17:07:47 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 17:07:47 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 17:09:06 - Method: GET producs
+Date: 10/7/2023 - Hour: 17:09:11 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 17:09:12 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 17:09:12 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 17:09:12 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 17:09:12 - Method: PUT a ticket
+Date: 10/7/2023 - Hour: 17:10:41 - Method: GET producs
+Date: 10/7/2023 - Hour: 17:10:44 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 17:10:45 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 17:10:45 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 17:10:45 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 17:10:45 - Method: PUT a ticket
+Date: 10/7/2023 - Hour: 17:15:49 - Method: GET producs
+Date: 10/7/2023 - Hour: 17:15:57 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 17:15:58 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 17:15:58 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 17:15:58 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 17:15:58 - Method: PUT a ticket
+Date: 10/7/2023 - Hour: 17:18:19 - Method: GET producs
+Date: 10/7/2023 - Hour: 17:18:25 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 17:18:26 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 17:18:26 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 17:18:26 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 17:18:26 - Method: PUT a ticket
+Date: 10/7/2023 - Hour: 18:11:39 - Method: GET producs
+Date: 10/7/2023 - Hour: 18:14:17 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 18:14:17 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 18:14:17 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 18:14:18 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 18:14:18 - Method: PUT a ticket
+Date: 10/7/2023 - Hour: 18:16:57 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 18:16:57 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 18:16:57 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 18:16:57 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 18:16:58 - Method: PUT a ticket
+Date: 10/7/2023 - Hour: 18:25:18 - Method: BUY a cart
+Date: 10/7/2023 - Hour: 18:25:19 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 18:25:19 - Method: UPDATE a product
+Date: 10/7/2023 - Hour: 18:25:19 - Method: POST a ticket
+Date: 10/7/2023 - Hour: 18:25:19 - Method: PUT a ticket

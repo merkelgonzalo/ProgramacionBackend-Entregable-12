@@ -31,8 +31,6 @@ app.use(session({
 }));
 initializePassport();
 
-/* const io = new Server(server); */
-
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.engine('handlebars', handlebars.engine());
@@ -47,6 +45,8 @@ app.use('/api/sessions', sessionRouter);
 
 app.use(passport.initialize());
 app.use(passport.session());
+
+// const io = new Server(server);
 
 // io.on('connection', socket =>{
 //     console.log("New connected client")

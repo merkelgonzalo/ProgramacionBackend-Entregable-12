@@ -126,22 +126,16 @@ buyButton.addEventListener('click', e =>{
 
     try {
       // Enviar una solicitud POST al servidor para finalizar la compra
-      const response = fetch(`/api/carts/${cartId}/purchase`, {
+      fetch(`/api/carts/${cartId}/purchase`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         }
+      }).then(result=>{
+        if(result.status == 200){
+          window.location.replace(`/carts/${cartId}`);
+        }
       });
-
-      // Manejar la respuesta del servidor
-      const data = response;
-      if (response.ok) {
-        // La compra finalizo correctamente
-        console.log('Purchase finished');
-      } else {
-        // Ocurrió un error al finalizar la compra
-        console.log('Error buying cart:', data.error);
-      }
     } catch (error) {
       console.log('Error:', error);
     }
