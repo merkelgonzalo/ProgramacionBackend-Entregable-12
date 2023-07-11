@@ -27,7 +27,7 @@ export class CartRepository{
     }
 
     async getCartByIdPopulate(cid){
-        const result = await this.dao.getCart(cid);
+        const result = await this.dao.getCartPopulate(cid);
         return result;
     }
 
