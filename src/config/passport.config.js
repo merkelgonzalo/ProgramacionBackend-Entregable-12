@@ -40,19 +40,25 @@ const initializePassport = () => {
     });
 
     passport.deserializeUser(async (id, done) => {
-        if(id === 0){
-            const user = {
-                _id: 0, //A modo de prueba, teniendo en cuenta que ningun usuario va a tener ese ID, para serializar
-                first_name: 'Administrador',
-                last_name: 'Del Sistema',
-                email: email,
-                age: 99,
-                role: 'admin'
-            };
-        }else{
-            const user = await userModel.findById(id);
+        try{
+            let user;
+            if(id === 0){
+                user = {
+                    _id: 0, //A modo de prueba, teniendo en cuenta que ningun usuario va a tener ese ID, para serializar
+                    first_name: 'Administrador',
+                    last_name: 'Del Sistema',
+                    email: email,
+                    age: 99,
+                    role: 'admin'
+                };
+            }else{
+                user = await userModel.findById(id);
+            }
+            done(null, user)
+        } catch (error) {
+            done(error, null);
         }
-        done(null, user)
+        
     });
 
     passport.use('login', new LocalStrategy({usernameField:'email'}, async (email, password, done)=>{
