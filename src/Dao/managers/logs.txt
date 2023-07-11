@@ -1175,3 +1175,43 @@ Date: 11/7/2023 - Hour: 17:28:43 - Method: UPDATE all products in a cart
 Date: 11/7/2023 - Hour: 17:28:44 - Method: POST a ticket
 Date: 11/7/2023 - Hour: 17:28:45 - Method: PUT a ticket
 Date: 11/7/2023 - Hour: 17:28:45 - Method: GET a cart
+Date: 11/7/2023 - Hour: 17:35:00 - Method: GET producs
+Date: 11/7/2023 - Hour: 17:35:01 - Method: GET producs
+Date: 11/7/2023 - Hour: 17:35:11 - Method: BUY a cart
+Date: 11/7/2023 - Hour: 17:35:12 - Method: UPDATE all products in a cart
+Date: 11/7/2023 - Hour: 17:35:12 - Method: POST a ticket
+Date: 11/7/2023 - Hour: 17:35:13 - Method: PUT a ticket
+Date: 11/7/2023 - Hour: 17:35:13 - Method: GET a cart
+Date: 11/7/2023 - Hour: 17:38:39 - Method: GET producs
+Date: 11/7/2023 - Hour: 17:38:43 - Method: Login
+Date: 11/7/2023 - Hour: 17:38:47 - Method: POST a cart
+Date: 11/7/2023 - Hour: 17:39:49 - Method: GET producs
+Date: 11/7/2023 - Hour: 17:39:53 - Method: Login
+Date: 11/7/2023 - Hour: 17:40:00 - Method: POST a cart
+Date: 11/7/2023 - Hour: 17:42:11 - Method: GET producs
+Date: 11/7/2023 - Hour: 17:42:15 - Method: Login
+Date: 11/7/2023 - Hour: 17:42:21 - Method: POST a cart
+Date: 11/7/2023 - Hour: 17:52:06 - Method: GET producs
+Date: 11/7/2023 - Hour: 17:52:09 - Method: Login
+Date: 11/7/2023 - Hour: 17:52:16 - Method: POST a cart
+Date: 11/7/2023 - Hour: 17:52:50 - Method: GET producs
+Date: 11/7/2023 - Hour: 17:52:58 - Method: Login
+Date: 11/7/2023 - Hour: 17:53:04 - Method: POST a cart
+Date: 11/7/2023 - Hour: 18:05:31 - Method: GET producs
+Date: 11/7/2023 - Hour: 18:05:35 - Method: Login
+Date: 11/7/2023 - Hour: 18:05:40 - Method: POST a cart
+Date: 11/7/2023 - Hour: 18:06:16 - Method: GET producs
+Date: 11/7/2023 - Hour: 18:06:19 - Method: Login
+Date: 11/7/2023 - Hour: 18:06:25 - Method: POST a cart
+Date: 11/7/2023 - Hour: 18:10:49 - Method: GET producs
+Date: 11/7/2023 - Hour: 18:10:52 - Method: Login
+Date: 11/7/2023 - Hour: 18:10:57 - Method: POST a cart
+Date: 11/7/2023 - Hour: 18:11:51 - Method: GET producs
+Date: 11/7/2023 - Hour: 18:11:53 - Method: Login
+Date: 11/7/2023 - Hour: 18:11:58 - Method: POST a cart
+Date: 11/7/2023 - Hour: 18:12:27 - Method: GET producs
+Date: 11/7/2023 - Hour: 18:12:30 - Method: Login
+Date: 11/7/2023 - Hour: 18:12:40 - Method: GET producs
+Date: 11/7/2023 - Hour: 18:57:05 - Method: GET producs
+Date: 11/7/2023 - Hour: 18:57:26 - Method: GET producs
+Date: 11/7/2023 - Hour: 18:59:44 - Method: GET producs
