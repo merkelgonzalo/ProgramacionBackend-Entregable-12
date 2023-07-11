@@ -1,4 +1,4 @@
-// const socket = io();
+
 // const addForm = document.getElementById("addForm");
 
 // addForm.addEventListener("submit", (event) => {
@@ -49,26 +49,6 @@
 //   const _id = deleteForm.elements._id.value;
 
 //   socket.emit('deleteProduct', _id);
-// });
-
-// const input = document.getElementById('textbox');
-// const log = document.getElementById('log');
-    
-// input.addEventListener('keyup', evt =>{
-//   if(evt.key === 'Enter'){
-//       socket.emit('messages',input.value)
-//       input.value = '';
-//   }
-// })
-
-// socket.on('log',data=>{
-
-//   let logs = '';
-
-//   data.logs.forEach(log => {
-//   logs += `${ log.socketid } say: ${ log.message} <br/>`      
-//   });
-//   log.innerHTML = logs;    
 // });
 
 // Handlebars.registerHelper('mayor', function(value, options) {
@@ -140,5 +120,47 @@ buyButton.addEventListener('click', e =>{
       console.log('Error:', error);
     }
 });
+
+const socket = io();
+const userElement = document.getElementById('userEmail');
+const userMail = userElement.innerText;
+
+const chatbox = document.getElementById('chatbox');
+
+socket.emit('authenticated', userMail);
+
+chatbox.addEventListener('keyup', evt =>{
+    if(evt.key === "Enter"){
+        if(chatbox.value.trim().length>0){
+            socket.emit('message', {userMail:userMail, message:chatbox.value.trim()})
+            chatbox.value = "";
+        }
+    }
+})
+
+socket.on('messageLogs', data =>{
+    if(!userMail) return;
+
+    let log = document.getElementById('messageLogs');
+    let messages = "";
+
+    data.forEach(message => {
+        messages +=  `${ message.userMail } dice: ${ message.message } <br/>  `       
+    });
+    log.innerHTML = messages
+
+})
+
+socket.on('newUserConnected', data =>{
+    if(!userMail) return;
+    Swal.fire({
+        toast:true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 3000,
+        title: `${data} se ha unido al chat`,
+        icon: "success"
+    })
+})
 
 

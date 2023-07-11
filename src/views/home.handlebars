@@ -1,6 +1,7 @@
 <h3>Welcome
     {{#if user}}
-        : {{user.first_name}} {{user.name}} / {{user.email}} / {{user.role}}
+        : {{user.first_name}} {{user.name}} / {{user.role}}
+        <div id="userEmail">{{user.email}}</div>
         <div id="cartId">{{user.cart}}</div>
         <button id="buyButton" {{#if disable}} disabled {{/if}}>B U Y</button>
         <br>
@@ -71,4 +72,15 @@
     {{/if}}
 
 </div>
+
+<div>
+    {{#if user}}
+        <h1>Chat</h1>
+            <input id="chatbox">
+            <p id="messageLogs"></p>
+    {{/if}}
+</div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
 <script src="/js/home.js"></script>

@@ -12,6 +12,8 @@ import sessionRouter from './routes/sessions.router.js';
 import passport from 'passport';
 import initializePassport from './config/passport.config.js';
 import { config } from './config/config.js';
+import { userModel } from './Dao/models/users.model.js';
+import messageModel from './Dao/models/messages.model.js';
 
 const MONGO = config.mongo.url;
 const PORT = config.server.port;
@@ -46,26 +48,30 @@ app.use('/api/sessions', sessionRouter);
 app.use(passport.initialize());
 app.use(passport.session());
 
-// const io = new Server(server);
+const io = new Server(server);
+const messages = [];
 
-// io.on('connection', socket =>{
-//     console.log("New connected client")
+io.on('connection', Socket =>{
+    console.log("New connected client")
 
-//     socket.on('newProduct', async (product) => {
-//         await productManager.addProduct(product);
+    // socket.on('newProduct', async (product) => {
+    //     await productManager.addProduct(product);
   
-//         io.emit('updateProducts', await productManager.getProducts());
-//     });
+    //     io.emit('updateProducts', await productManager.getProducts());
+    // });
 
-//     socket.on('deleteProduct', async (id) => {
-//         await productManager.deleteProductById(id);
+    // socket.on('deleteProduct', async (id) => {
+    //     await productManager.deleteProductById(id);
   
-//         io.emit('updateProducts', await productManager.getProducts());
-//     });
+    //     io.emit('updateProducts', await productManager.getProducts());
+    // });
+  
+      Socket.on('message', data=>{
+          messages.push(data);
+          io.emit('messageLogs', messages)
+      })
 
-//     socket.on("messages", data =>{
-//         logs.push({socketid: socket.id, mesage: data})
-//         socketServerIO.emit('log', {logs})
-//     })
-
-// });
+      Socket.on('authenticated', data =>{  
+        Socket.broadcast.emit('newUserConnected', data)
+      })
+});
