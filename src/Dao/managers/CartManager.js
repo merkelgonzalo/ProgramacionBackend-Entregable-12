@@ -117,7 +117,6 @@ export default class CartManager {
         try {
             await managerAccess.saveLog('UPDATE all products in a cart');
             const cart = await this.model.findById(cid);
-            console.log(cart)
             let result;
             if (!cart) {
                 result = 0;
@@ -157,6 +156,7 @@ export default class CartManager {
         try {
             await managerAccess.saveLog('BUY a cart');
             let result = [];
+            let productsOutOfStock = [];
             let amount = 0;
             let newProduct;
             const cart = await this.model.find({ _id: cid });
@@ -164,17 +164,22 @@ export default class CartManager {
                 cart[0].products.forEach(productCart => {
                     let quantity = productCart.quantity;
                     let stock = productCart.product.stock;
-                    let newProduct = productCart.product;
+                    newProduct = productCart.product;
                     if(quantity <= stock){
                         //Si hay stock, restarlo del stock del producto y seguir
                         newProduct.stock = newProduct.stock - quantity;
                         productManager.put(newProduct._id, newProduct);
                         let priceProduct = newProduct.price * quantity;
                         amount = amount + priceProduct;
+                    }else{
+                        //Si no hay stock no agregarlo al proceso de compra
+                        productsOutOfStock.push(productCart);
                     }
                 });
             }
             result[0] = amount;
+            let cartModified = await this.put(cid, productsOutOfStock);
+            console.log(cartModified);
             return result;
         } catch (error) {
             console.log('Cannot buy cart in manager with mongoose: ' + error)
